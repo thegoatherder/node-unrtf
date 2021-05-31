@@ -174,7 +174,7 @@ class UnRTF {
 				options,
 				versionInfo
 			);
-			args.push(file);
+			args.push(`"${file}"`);
 
 			const { stdout } = await execFileAsync(
 				path.join(this.unrtfPath, "unrtf"),
